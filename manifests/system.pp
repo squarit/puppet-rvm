@@ -37,8 +37,8 @@ class rvm::system(
   $environment = concat($proxy_environment, ["HOME=${home}"])
 
   # install the gpg key
-  if $gnupg_key_id {
-    class { 'rvm::gnupg_key':
+  if length($gnupg_key_id) > 0 {
+    class { '::rvm::gnupg_key':
       key_server => $key_server,
       key_id     => $gnupg_key_id,
       before     => Exec['system-rvm'],
