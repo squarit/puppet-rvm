@@ -50,7 +50,7 @@ GEM
       json
     domain_name (0.5.23)
       unf (>= 0.0.5, < 1.0.0)
-    excon (0.43.0)
+    excon (0.75.0)
     extlib (0.9.16)
     facter (2.4.3)
       CFPropertyList (~> 2.2.6)
